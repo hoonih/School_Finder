@@ -3,16 +3,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background=""
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="124dp"/>
+
+    <LinearLayout
+        android:id="@+id/loginbox"
+        android:background="@drawable/bx_idpw"
+        android:orientation="vertical"
+        android:layout_width="354dp"
+        android:layout_height="227dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="62dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="24dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/et_graybox"
+            android:hint="아이디"
+            android:textColorHint="#CFCFCF"
+            android:fontFamily="@font/suitmedium"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="6dp"
+            android:paddingStart="14dp"
+            />
+        <EditText
+            android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/et_graybox"
+            android:hint="패스워드"
+            android:paddingStart="14dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="6dp"
+            android:textColorHint="#CFCFCF"
+            android:fontFamily="@font/suitmedium"
+            />
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="18dp"
+            android:background="@drawable/bt_login"
+            android:textColor="@color/white"
+            android:fontFamily="@font/suitsemi"
+            android:text="로그인" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginbox"
+        android:layout_marginTop="21dp"
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
