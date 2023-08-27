@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_main_home"
+        android:icon="@drawable/search"
+        android:title="검색" />
+
+    <item android:id="@+id/menu_main_calander"
+        android:icon="@drawable/account_circle"
+        android:title="마이페이지" />
+
+    <item android:id="@+id/menu_main_myclass"
+        android:icon="@drawable/settings"
+        android:title="설정" />
+</menu>
